@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.moving-text {
+  font-size: 2em;
+  font-weight: bold;
+  animation: moveText 10s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+}
+@keyframes moveText {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+.social-icons img {
+  width: 40px;
+  margin: 10px;
+}
+.featured-video iframe {
+  border-radius: 10px;
+  box-shadow: 0 0 20px yellow;
+}
+.rotating-coin img {
+  width: 100px;
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+/* script.js */
+window.addEventListener("scroll", function() {
+  document.querySelector(".moving-text").style.transform = 
+      `translateX(${window.scrollY * -0.5}px)`;
+});
