@@ -26,8 +26,8 @@ body {
 .moving-text {
   font-size: 24px;
   font-weight: bold;
-  color: yellow;
-  text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8); /* ყვითელი ნათება */
+  color: #e8ff28f0;
+  text-shadow: 0px 0px 10px rgba(255, 255, 70, 0.897); /* ყვითელი ნათება */
   white-space: nowrap; /* ტექსტი არ უნდა გადატყდეს ახალ ხაზზე */
   animation: marquee 10s linear infinite; /* ანიმაციის დამატება */
 }
@@ -165,7 +165,7 @@ body {
 }
 
 .main-text {
-  width: 41%; /* კონტეინერის სიგანე */
+  width: 49%; /* კონტეინერის სიგანე */
   margin: 50px auto; /* ცენტრში გასატანად (auto = ჰორიზონტალური ცენტრალიზაცია) */
   text-align: center; /* ტექსტი ცენტრში */
   font-size: 36px; /* დიდი ტექსტი */
@@ -226,4 +226,121 @@ body {
   font-size: 26px; /* რიცხვები დიდი იყოს */
   color: #ffa500; /* ნარინჯისფერი */
   text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8);
+}
+
+
+.meme-section {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px; /* 3D ეფექტისთვის */
+  margin: 50px auto;
+  position: relative;
+}
+
+.meme-carousel {
+  margin-top: 3%;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+}
+
+.meme-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  transition: transform 1s ease-in-out, opacity 0.5s;
+  transform-origin: center;
+}
+
+.meme-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.5);
+}
+
+/* ცენტრალური ფოტო გამოკვეთილი */
+.meme-slide.active {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0px 0px 30px yellow;
+}
+
+/* ღილაკები */
+button {
+  transform: translateX(-90%);
+  z-index:2 ;
+  background: yellow;
+  color: black;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px yellow;
+  transition: all 0.3s ease-in-out;
+}
+#next-btn {
+  transform: translateX(90%);
+  background: yellow;
+  color: black;
+  font-size: 18px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background: orange;
+  box-shadow: 0px 0px 15px orange;
+}
+
+
+
+.footer-section {
+display: block;
+  margin-top: 10%;
+  width: 100%;
+  height: 200px;
+  background: rgba(26, 160, 77, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 50px;
+}
+
+.footer-content h2 {
+  font-size: 32px;
+  color: yellow;
+  text-shadow: 0px 0px 15px yellow;
+}
+
+.footer-content p {
+  font-size: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.footer-content .social-icons img {
+  margin-bottom: ;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.footer-content .social-icons img:hover {
+  
+  transform: scale(1.2);
+}
+.footer-text{
+  color: black;;
 }
