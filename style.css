@@ -14,18 +14,45 @@ body {
   object-fit: cover;
   z-index: -1;
 }
+.moving-back {
+  width: 100%; /* სრული სიგანე */
+  height: 50px; /* სიმაღლე */
+  background: rgba(0, 0, 0, 0.5); /* გამჭვირვალე შავი ფონი */
+  overflow: hidden; /* ტექსტი რომ არ გავიდეს ზონიდან */
+  display: flex;
+  align-items: center; /* ტექსტი ცენტრში */
+}
+
 .moving-text {
-  font-size: 2em;
+  font-size: 24px;
   font-weight: bold;
-  animation: moveText 10s linear infinite;
-  white-space: nowrap;
-  overflow: hidden;
+  color: yellow;
+  text-shadow: 0px 0px 10px rgba(255, 255, 0, 0.8); /* ყვითელი ნათება */
+  white-space: nowrap; /* ტექსტი არ უნდა გადატყდეს ახალ ხაზზე */
+  animation: marquee 10s linear infinite; /* ანიმაციის დამატება */
 }
+
+/* მოსიარულე ტექსტის ანიმაცია */
+@keyframes marquee {
+  from {
+      transform: translateX(100%);
+  }
+  to {
+      transform: translateX(-100%);
+  }
+}
+
 @keyframes moveText {
-  from { transform: translateX(100%); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
+.social-icons{ margin-top: 1%;}
 .social-icons img {
+ 
   width: 40px;
   margin: 10px;
 }
@@ -38,12 +65,168 @@ body {
   animation: spin 3s linear infinite;
 }
 @keyframes spin {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(360deg); }
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
 }
 
-/* script.js */
-window.addEventListener("scroll", function() {
-  document.querySelector(".moving-text").style.transform = 
-      `translateX(${window.scrollY * -0.5}px)`;
-});
+.main-content {
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.moving-text {
+  margin-top: 0.5%;
+  color: #FFA500;
+}
+.left1 {
+  margin-top: 18%;
+
+  transform: translateX(60%);
+  width: 300px;
+  height: 300px;
+}
+
+.right2 {
+  width: 300px;
+  height: 300px;
+  margin-top: 18%;
+  transform: translateX(-60%);
+}
+.left1,
+.right2 {
+  border-radius: 10px; /* კუთხეების ოდნავ მომრგვალება */
+  box-shadow: 0 0 20px yellow; /* ყვითელი ნათება */
+  transition: box-shadow 0.5s ease-in-out; /* გლუვი გადასვლა */
+}
+
+.left1:hover,
+.right2:hover {
+  box-shadow: 0 0 30px yellow; /* უფრო ძლიერი ნათება ჰოვერისას */
+}
+
+.side-images {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rotating-coin {
+  margin-top: 10%;
+  transform: translateX(50%);
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; /* 3D ეფექტისთვის */
+}
+
+.coin-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: flip 3s infinite linear;
+}
+
+.coin-front,
+.coin-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.coin-front img,
+.coin-back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* მონეტის ფორმა */
+}
+
+/* უკანა მხარის დამალვა და გადაბრუნება */
+.coin-back {
+  transform: rotateY(180deg);
+}
+
+/* ანიმაცია */
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.main-text {
+  width: 41%; /* კონტეინერის სიგანე */
+  margin: 50px auto; /* ცენტრში გასატანად (auto = ჰორიზონტალური ცენტრალიზაცია) */
+  text-align: center; /* ტექსტი ცენტრში */
+  font-size: 36px; /* დიდი ტექსტი */
+  font-weight: bold; /* სქელი ტექსტი */
+  color: yellow; /* ყვითელი ფერი */
+  text-shadow: 2px 2px 10px rgba(255, 255, 0, 0.8); /* ლამაზი ნათება */
+  background: rgba(0, 0, 0, 0.5); /* გამჭვირვალე შავი ფონტი */
+  padding: 20px; /* ტექსტის გარშემო სივრცე */
+  border-radius: 10px; /* მომრგვალებული კუთხეები */
+  box-shadow: 0 0 20px yellow;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.scrolling-videos {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.scrolling-videos iframe{
+  width: 25%;
+  border-radius: 10px; /* მომრგვალებული კუთხეები */
+  box-shadow: 0 0 20px yellow;
+    transition: box-shadow 0.5s ease-in-out;
+ ;}
+
+
+
+
+ .plan {
+  width: 45%; /* კონტეინერის სიგანე */
+  margin: 7% auto; /* ცენტრში გასწორება */
+  text-align: left; /* ტექსტი მარცხნიდან დაიწყოს */
+  font-size: 22px; /* დიდი ტექსტი */
+  font-weight: bold; /* სქელი ტექსტი */
+  color: yellow; /* ყვითელი ფერი */
+  text-shadow: 0px 0px 15px rgba(255, 255, 0, 0.8), 
+               0px 0px 30px rgba(255, 255, 0, 0.5); /* ყვითელი ნათება */
+  background: rgba(0, 0, 0, 0.5); /* გამჭვირვალე შავი ფონი */
+  padding: 20px; /* ტექსტის გარშემო სივრცე */
+  border-radius: 10px; /* მომრგვალებული კუთხეები */
+  line-height: 1.8; /* ხაზებს შორის დაშორება */
+  list-style: none; /* ნუმერაცია ლამაზად რომ გამოვიდეს */
+  box-shadow: 0 0 20px yellow;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* პირველ ხაზზე "🔑 Here’s the Plan:" გასხვაო */
+.plan::before {
+  content: "🔑 Here’s the Plan:";
+  display: block;
+  font-size: 26px;
+  color: #FFD700; /* ოქროსფერი */
+  text-align: center;
+  margin-bottom: 15px;
+  text-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
+}
+
+/* ნუმერაციაში რიცხვები და ემოჯი ლამაზად გამოჩნდეს */
+.plan span {
+  font-size: 26px; /* რიცხვები დიდი იყოს */
+  color: #FFA500; /* ნარინჯისფერი */
+  text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8);
+}
