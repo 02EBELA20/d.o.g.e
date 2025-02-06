@@ -82,7 +82,7 @@ body {
 }
 .moving-text {
   margin-top: 0.5%;
-  color: #ffa500;
+  color: #ebf712;
 }
 .left1 {
   margin-top: 18%;
@@ -178,7 +178,7 @@ body {
   box-shadow: 0 0 20px yellow;
   transition: box-shadow 0.5s ease-in-out;
 }
-
+.main-big{ font-size: xx-large;}
 .scrolling-videos {
   margin-top: 7%;
   display: flex;
