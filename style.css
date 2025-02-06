@@ -35,10 +35,10 @@ body {
 /* მოსიარულე ტექსტის ანიმაცია */
 @keyframes marquee {
   from {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
   to {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
 }
 
@@ -50,9 +50,10 @@ body {
     transform: translateX(-100%);
   }
 }
-.social-icons{ margin-top: 1%;}
+.social-icons {
+  margin-top: 1%;
+}
 .social-icons img {
- 
   width: 40px;
   margin: 10px;
 }
@@ -81,7 +82,7 @@ body {
 }
 .moving-text {
   margin-top: 0.5%;
-  color: #FFA500;
+  color: #ffa500;
 }
 .left1 {
   margin-top: 18%;
@@ -175,7 +176,7 @@ body {
   padding: 20px; /* ტექსტის გარშემო სივრცე */
   border-radius: 10px; /* მომრგვალებული კუთხეები */
   box-shadow: 0 0 20px yellow;
-    transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 .scrolling-videos {
@@ -183,34 +184,30 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  
 }
-.scrolling-videos iframe{
+.scrolling-videos iframe {
   width: 25%;
   border-radius: 10px; /* მომრგვალებული კუთხეები */
   box-shadow: 0 0 20px yellow;
-    transition: box-shadow 0.5s ease-in-out;
- ;}
+  transition: box-shadow 0.5s ease-in-out;
+}
 
-
-
-
- .plan {
+.plan {
   width: 45%; /* კონტეინერის სიგანე */
   margin: 7% auto; /* ცენტრში გასწორება */
   text-align: left; /* ტექსტი მარცხნიდან დაიწყოს */
   font-size: 22px; /* დიდი ტექსტი */
   font-weight: bold; /* სქელი ტექსტი */
   color: yellow; /* ყვითელი ფერი */
-  text-shadow: 0px 0px 15px rgba(255, 255, 0, 0.8), 
-               0px 0px 30px rgba(255, 255, 0, 0.5); /* ყვითელი ნათება */
+  text-shadow: 0px 0px 15px rgba(255, 255, 0, 0.8),
+    0px 0px 30px rgba(255, 255, 0, 0.5); /* ყვითელი ნათება */
   background: rgba(0, 0, 0, 0.5); /* გამჭვირვალე შავი ფონი */
   padding: 20px; /* ტექსტის გარშემო სივრცე */
   border-radius: 10px; /* მომრგვალებული კუთხეები */
   line-height: 1.8; /* ხაზებს შორის დაშორება */
   list-style: none; /* ნუმერაცია ლამაზად რომ გამოვიდეს */
   box-shadow: 0 0 20px yellow;
-    transition: box-shadow 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 /* პირველ ხაზზე "🔑 Here’s the Plan:" გასხვაო */
@@ -218,7 +215,7 @@ body {
   content: "🔑 Here’s the Plan:";
   display: block;
   font-size: 26px;
-  color: #FFD700; /* ოქროსფერი */
+  color: #ffd700; /* ოქროსფერი */
   text-align: center;
   margin-bottom: 15px;
   text-shadow: 0px 0px 20px rgba(255, 215, 0, 1);
@@ -227,6 +224,6 @@ body {
 /* ნუმერაციაში რიცხვები და ემოჯი ლამაზად გამოჩნდეს */
 .plan span {
   font-size: 26px; /* რიცხვები დიდი იყოს */
-  color: #FFA500; /* ნარინჯისფერი */
+  color: #ffa500; /* ნარინჯისფერი */
   text-shadow: 0px 0px 10px rgba(255, 165, 0, 0.8);
 }
