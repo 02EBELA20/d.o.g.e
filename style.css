@@ -29,7 +29,7 @@ body {
   color: #e8ff28f0;
   text-shadow: 0px 0px 10px rgba(255, 255, 70, 0.897); /* ყვითელი ნათება */
   white-space: nowrap; /* ტექსტი არ უნდა გადატყდეს ახალ ხაზზე */
-  animation: marquee 10s linear infinite; /* ანიმაციის დამატება */
+  animation: marquee 20s linear infinite; /* ანიმაციის დამატება */
 }
 
 /* მოსიარულე ტექსტის ანიმაცია */
@@ -128,7 +128,7 @@ body {
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  animation: flip 3s infinite linear;
+  animation: flip 7s infinite linear;
 }
 
 .coin-front,
