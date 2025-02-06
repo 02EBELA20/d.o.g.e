@@ -403,7 +403,7 @@ display: block;
 
   .rotating-coin img {
    margin-left: 50px;
-    margin-right:80%;
+    margin-right:0%;
       width: 150px;
       height: 150px;
   }
@@ -476,9 +476,11 @@ display: block;
       width: 350px;
       height: 300px;
   }
-
+.rotating-coin{
+ transform: translateX(40%);
+}
   .rotating-coin img {
-     margin-right: 80%;
+     margin-right: 50%;
       width: 120px;
       height: 120px;
   }
