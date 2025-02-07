@@ -490,7 +490,7 @@ display: block;
     /* 🟡 მოსიარულე ტექსტი */
     .moving-back {
       height: 35px;
-      font-size: 14px;
+      font-size: 15px;
       margin-top: 1%;
   }
 
@@ -582,7 +582,4 @@ margin-top: 7%;
     {
       transform: translateX(-6%);
     }
-}
-
-
-
+  }
