@@ -63,12 +63,14 @@ body {
   margin: 10px;
 }
 .featured-video iframe {
+
   border-radius: 10px;
   box-shadow: 0 0 20px yellow;
 }
 .rotating-coin img {
   width: 100px;
-  animation: spin 3s linear infinite;
+  animation: spin 7s linear infinite;
+  margin-right: 60%;
 }
 @keyframes spin {
   from {
@@ -125,7 +127,7 @@ body {
 
 .rotating-coin {
   margin-top: 10%;
-  transform: translateX(75%);
+  transform: translateX(54%);
   width: 250px;
   height: 250px;
   perspective: 1000px; /* 3D ეფექტისთვის */
@@ -173,7 +175,7 @@ body {
 }
 
 .main-text {
-  width: 49%; /* კონტეინერის სიგანე */
+  width: 60.5%; /* კონტეინერის სიგანე */
   margin: 50px auto; /* ცენტრში გასატანად (auto = ჰორიზონტალური ცენტრალიზაცია) */
   text-align: center; /* ტექსტი ცენტრში */
   font-size: 36px; /* დიდი ტექსტი */
@@ -190,18 +192,22 @@ body {
 .scrolling-videos {
   margin-top: 7%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 30px; /* 🟡 ამით ვიდეოებს შორის შუალედი იზრდება */
 }
+
 .scrolling-videos iframe {
   width: 25%;
-  border-radius: 10px; /* მომრგვალებული კუთხეები */
+  height: 250px;
+  border-radius: 10px;
   box-shadow: 0 0 20px yellow;
   transition: box-shadow 0.5s ease-in-out;
 }
 
+
 .plan {
-  width: 45%; /* კონტეინერის სიგანე */
+  width: 60%; /* კონტეინერის სიგანე */
   margin: 7% auto; /* ცენტრში გასწორება */
   text-align: left; /* ტექსტი მარცხნიდან დაიწყოს */
   font-size: 22px; /* დიდი ტექსტი */
@@ -249,8 +255,8 @@ body {
 
 .meme-carousel {
   margin-top: 3%;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 1s ease-in-out;
@@ -354,336 +360,3 @@ display: block;
 }
 
 
-@media screen and (min-width: 1024px) and (max-width: 1240px) {
-  body {
-      font-size: 16px;
-      padding: 10px;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-
-  /* ფონის ვიდეო */
-  #background-video {
-      width: 100vw;
-      height: 100vh;
-  }
-
-  /* მოსიარულე ტექსტის ზოლი */
-  .moving-back {
-      height: 45px;
-      font-size: 18px;
-  }
-
-  .moving-text {
-      font-size: 20px;
-      white-space: nowrap;
-  }
-
-  /* სოციალური აიქონები */
-  .social-icons img {
-      width: 35px;
-      margin: 5px;
-      
-  }
-
-  /* მთავარი კონტენტი */
-  .main-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20%; /* აქ ცვლი მანძილს */
-}
-
-
-  .featured-video iframe {
-      width: 400px;
-      height: 350px;
-  }
-
-  .rotating-coin img {
-   margin-left: 50px;
-    margin-right:0%;
-      width: 150px;
-      height: 150px;
-  }
-
-  .left1,
-  .right2 {
-      width: 200px;
-      height: 200px;
-      margin-top: 22%;
-     
-  }
-
-  /* სქროლვადი ვიდეოები */
-  .scrolling-videos iframe {
-      width: 30%;
-      height: 250px;
-  }
-
-  /* ძირითადი ტექსტი */
-  .main-text {
-      width: 60%;
-      font-size: 25px;
-  }
-
-  .plan {
-      width: 55%;
-      font-size: 18px;
-  }
-
-  .meme-carousel {
-      width: 220px;
-      height: 220px;
-  }
-}
-
-
-
-@media screen and (max-width: 1024px) {
-  body {
-      font-size: 15px;
-      padding: 5px;
-      margin: 0;
-      box-sizing: border-box;
-  }
-
-  /* ფონის ვიდეო */
-  #background-video {
-      width: 100vw;
-      height: 100vh;
-  }
-
-  /* მოსიარულე ტექსტი */
-  .moving-back {
-      height: 40px;
-      font-size: 16px;
-  }
-
-  .moving-text {
-      font-size: 18px;
-  }
-
-  /* სოციალური აიქონები */
-  .social-icons img {
-      width: 30px;
-      margin: 3px;
-  }
-
-
-  .featured-video iframe {
-      width: 350px;
-      height: 300px;
-  }
-.rotating-coin{
- transform: translateX(40%);
-}
-  .rotating-coin img {
-     margin-right: 50%;
-      width: 120px;
-      height: 120px;
-  }
-
-  .left1,
-  .right2 {
-      width: 180px;
-      height: 180px;
-      margin-top: 20%;
-  }
-
-  /* სქროლვადი ვიდეოები */
-  .scrolling-videos iframe {
-      width: 30%;
-      height: 220px;
-  }
-
-  /* ძირითადი ტექსტი */
-  .main-text {
-      width: 66%;
-      font-size: 22px;
-  }
-
-  .plan {
-      width: 60%;
-      font-size: 16px;
-  }
-
-  .meme-carousel {
-      width: 150px;
-      height: 150px;
-  }
-}
-
-
-
-
-@media screen and (max-width: 767px) {
-  body {
-      font-size: 14px;
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-  }
-
-  /* ფონის ვიდეო */
-  #background-video {
-      width: 100vw;
-      height: 100vh;
-  }
-
-  /* მოსიარულე ტექსტი */
-  .moving-back {
-      height: 30px;
-      font-size: 12px;
-  }
-
-  .moving-text {
-      font-size: 12px;
-  }
-
-  /* სოციალური აიქონები */
-  .social-icons img {
-      width: 20px;
-      margin: 2px;
-  }
-
-  /* მთავარი კონტენტი */
-  .main-content {
-      margin-top: 5%;
-    
-  }
-  .featured-video iframe {
-    margin-bottom: -80%; /* აქ ცვლი შუალედს */
-}
-
-
-  
-
-  .rotating-coin img {
-     display: none;
-  }
-
-  .left1,
-  .right2 {display: none;
-      width: 100px;
-      height: 100px;
-      
-  }
-
-  .scrolling-videos {
-  
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 ვიდეო ერთ ხაზზე */
-    gap: 10px; /* ვიდეოებს შორის დაშორება */
-}
-
-.scrolling-videos iframe {
-    width: 100%; /* ავტომატური ზომა */
-    height: 280px;
-}
-
-  }
-
-  /* ძირითადი ტექსტი */
-  .main-text {
-      width: 73%;
-      
-  }
-
-  
-
-  .plan {
-      width: 73%;
-      font-size: 14px;
-  }
-
-  .meme-carousel {
-      display: none;
-  }
-  
-
-  /* მემე ღილაკები ცენტრში */
-  button {
-    display: none;
-     
-  }
-
-
-
-
-
-
-  @media screen and (min-width: 1241px) {
-    body {
-        font-size: 18px; /* უფრო დიდი შრიფტი */
-        padding: 20px;
-    }
-
-    /* ვიდეოს ზომის მომატება */
-    .featured-video iframe {
-        width: 600px;
-        height: 450px;
-    }
-
-    /* მონეტა (coin) */
-    .rotating-coin img {
-        width: 250px;
-        height: 250px;
-        transform: translateX(75%);
-        .for-coin {
-          display: flex;
-          justify-content: center; /* ცენტრში გაწევა */
-      }
-      
-      .rotating-coin {
-          margin-left: auto;
-          margin-right: ;
-      }
-      
-    }
-
-    /* მარცხენა და მარჯვენა სურათები */
-    .left1,
-    .right2 {
-        width: 350px;
-        height: 350px;
-        margin-top: 10%;
-    }
-
-    /* მთავარი ტექსტი */
-    .main-text {
-        width: 50%;
-        font-size: 40px;
-    }
-
-    /* სქროლვადი ვიდეოები */
-    .scrolling-videos {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-    }
-
-    .scrolling-videos iframe {
-        width: 40%;
-        height: 300px;
-    }
-
-    /* მთავარი გეგმის ბლოკი */
-    .plan {
-        width: 50%;
-        font-size: 22px;
-    }
-
-    /* მემე სექცია */
-    .meme-carousel {
-        width: 350px;
-        height: 350px;
-    }
-
-    /* ქვედა სექცია (footer) */
-    .footer-section {
-        height: 250px;
-        padding: 50px;
-    }
-}
