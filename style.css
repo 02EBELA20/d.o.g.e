@@ -594,8 +594,53 @@ margin-top: 7%;
     }
   }
 
+}
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden; /* გვერდითა scrolling-ის გასაქრობად */
 
-
-
+}
+.moving-back{
+  height: 30px;
+}
+.moving-text{font-size: 14px;}
+.featured-video
+display: flex;
+justify-content: center;
+}
+.featured-video iframe{
+  height: 400px;
+margin-top: 25px;
+}
+.left1,.right2{
+  display: none;
+}
+.rotating-coin{
+  width:200px;
+  height:200px;
+  display: flex;
+transform: translateX(75%);
+}
+.main-text{
+  width: 80%;
+  font-size:25px;
+  
+}
+.scrolling-videos iframe{
+ width: 40%; ;
+}
+.plan{
+  width: 80%;
+  font-size: 15px;
+}
+.meme-carousel{
+  width: 150px;
+  height: 150px;
 }
