@@ -10,25 +10,19 @@ body {
       padding: 0;
       box-sizing: border-box
 }
-body {
-  font-family: Arial, sans-serif;
-  background-image: url('your-background-image.jpg'); /* შეცვალე სწორი ბექგრაუნდით */
-  background-size: cover;
-  background-position: center;
-  color: yellow;
-  text-align: center;
-  padding: 20px;
-}
 
-.container {margin-top: 5%;
-width: 60%;
+
+/* 🟢 CONTAINER FIXES */
+.container {
+  width: 80%; /* კომპიუტერზე სიგანე 70% */
+   მაქსიმალური სიგანე */
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 15px;
   display: inline-block;
   text-align: left;
-  max-width: 100%;
 }
+
 
 .plan-item {wi
   display: flex;
@@ -256,7 +250,7 @@ width: 60%;
 }
 
 
-.plan {
+.container {
   width: 60%; /* კონტეინერის სიგანე */
   margin: 7% auto; /* ცენტრში გასწორება */
   text-align: left; /* ტექსტი მარცხნიდან დაიწყოს */
@@ -518,7 +512,7 @@ display: block;
     }
 
     /* 🟡 ძირითადი გეგმის სექცია */
-    .plan {
+    .container {
         width: 65%;
         font-size: 18px;
     }
@@ -625,7 +619,7 @@ margin-top: 7%;
     }
 
     /* 🟡 ძირითადი გეგმის სექცია */
-    .plan {
+    .container {
         width: 65%;
         font-size: 16px;
     }
@@ -665,8 +659,8 @@ body {
 
 /* 🟢 CONTAINER FIXES */
 .container {
-  width: 90%;
-  max-width: 600px;
+  width: 60%;
+  
   background: rgba(0, 0, 0, 0.7);
   padding: 20px;
   border-radius: 15px;
