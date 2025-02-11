@@ -67,11 +67,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 20px yellow;
 }
-.rotating-coin img {
-  width: 100px;
-  animation: spin 7s linear infinite;
-  margin-right: 60%;
-}
+
 @keyframes spin {
   from {
     transform: rotateY(0deg);
@@ -127,7 +123,7 @@ body {
 
 .rotating-coin {
   margin-top: 10%;
-  transform: translateX(54%);
+  transform: translateX(80%);
   width: 250px;
   height: 250px;
   perspective: 1000px; /* 3D ეფექტისთვის */
@@ -441,7 +437,7 @@ display: block;
         height: 150px;
         display: flex;
         
-        transform: translateX(-120%) translateY(120%);
+        transform: translateX(-110%) translateY(120%);
 
         
     }
@@ -546,7 +542,7 @@ margin-top: 7%;
     height: 150px;
     display: flex;
     
-    transform: translateX(60%) 
+    transform: translateX(-60%) 
 
     
   }
@@ -626,7 +622,7 @@ margin-top: 25px;
   width:200px;
   height:200px;
   display: flex;
-transform: translateX(75%);
+  margin-bottom:120px;
 }
 .main-text{
   width: 80%;
