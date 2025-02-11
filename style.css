@@ -668,6 +668,9 @@ body {
   display: inline-block;
   text-align: left;
 }
+.container h2 {
+  text-align: center;
+}
 
 /* 🟡 MOBILE FIXES */
 @media screen and (max-width: 768px) {
