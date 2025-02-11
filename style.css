@@ -670,6 +670,9 @@ body {
 
 /* 🟡 MOBILE FIXES */
 @media screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
   /* მობილურ ვერსიაზე სურათების გაქრობა */
   .left1,
   .right2 {
