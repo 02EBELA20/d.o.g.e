@@ -10,6 +10,60 @@ body {
       padding: 0;
       box-sizing: border-box
 }
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('your-background-image.jpg'); /* შეცვალე სწორი ბექგრაუნდით */
+  background-size: cover;
+  background-position: center;
+  color: yellow;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {margin-top: 5%;
+width: 60%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: left;
+  max-width: 100%;
+}
+
+.plan-item {wi
+  display: flex;
+  align-items: flex-start;
+  margin: 15px 0;
+}
+
+.number {
+  
+  font-size: 24px;
+  font-weight: bold;
+  
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.text {
+  
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: orange;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
 #background-video {
   position: fixed;
   top: 0;
