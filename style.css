@@ -105,6 +105,9 @@ body {
 }
 .social-icons {
   margin-top: 1%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
 }
 .social-icons img {
   width: 40px;
