@@ -221,6 +221,19 @@ body {
   }
 }
 
+#toggle-music {
+ 
+ transform: translateX(2%) translateY(50%);
+ 
+  background-color: yellow;
+  color: black;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .main-text {
   width: 57%; /* კონტეინერის სიგანე */
   margin: 50px auto; /* ცენტრში გასატანად (auto = ჰორიზონტალური ცენტრალიზაცია) */
@@ -235,6 +248,8 @@ body {
   box-shadow: 0 0 20px yellow;
   transition: box-shadow 0.5s ease-in-out;
 }
+
+
 
 .scrolling-videos {
   margin-top: 7%;

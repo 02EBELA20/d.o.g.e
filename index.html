@@ -15,6 +15,9 @@
     </video>
 
 
+    
+    
+
 
     <div class="social-icons">
         <a href="https://t.me/departmentofgreenenergy" target="_blank"><img src="icon/tel.png" alt="Twitter"></a>
@@ -22,11 +25,41 @@
                 <a href="https://x.com/DOGE89649" target="_blank"><img src="icon/x.png" alt="Telegram"></a>
 
     </div>
+
+
     <div class="moving-back">
         <span class="moving-text">
             🔊 ELON YOU HAVE THE PLAN DOGE-ENERGY WILL BRING THE FORCE! WE’RE IN & WE’RE ALL IN TIME TO LIGHT UP THE SOLAR WORLD! ☀️🌎🚀
         </span>
     </div>
+
+    <audio id="background-music" loop>
+        <source src="audio/ELON YOU HAVE THE PLAN DOGE-EN...2025-02-11.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <button id="toggle-music">🔊 Pause</button>
+    
+    <script>
+        const music = document.getElementById("background-music");
+        const toggleButton = document.getElementById("toggle-music");
+    
+        // 👉 ავტომატურად ვცდილობთ აუდიოს გაშვებას
+        window.addEventListener("load", function() {
+            music.play().catch(error => console.log("Autoplay blocked:", error));
+        });
+    
+        // 🎵 Play/Pause ღილაკის ფუნქცია
+        toggleButton.addEventListener("click", function() {
+            if (music.paused) {
+                music.play();
+                toggleButton.textContent = "🔊 Pause";
+            } else {
+                music.pause();
+                toggleButton.textContent = "▶️ Play";
+            }
+        });
+    </script>
 
     <div class="main-content">
         <img class="left1" src="img/left.jpg" alt="Side Image 1 ">
@@ -54,9 +87,9 @@
 
         </class=>
     </div>
-    <div class="main-text"><span class="main-big">📢 ELON, THE WORLD IS WATCHING IT’S TIME TO ACT!</span>
-        Elon, we believe in your vision to power the world with solar energy. But belief alone isn’t enough. This is not a request it’s a demand. The time for action is now. No delays. No excuses. We’re standing ready to prove that humanity is prepared to embrace this transformative shift.
-        🚀</div>
+    <div class="main-text"><span class="main-big">
+        Elon, your vision of a world powered by renewable energy has ignited hope and inspiration across the globe. Humanity stands ready to embrace this Evolutionary shift. You have the resources, influence, and ingenuity to lead this charge, You’ve already shown the world what’s possible when determination meets innovation. Let’s make history—for our planet, for our children, and for the boundless potential of life itself. 🌍✨
+        </div>
 
     <div class="scrolling-videos">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/67u1bLffMr8?si=bMQVRxTxqBElx5hh"
