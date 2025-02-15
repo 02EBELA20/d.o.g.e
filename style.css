@@ -223,9 +223,9 @@ body {
 
 #toggle-music {
  
- transform: translateX(800%) translateY(50%);
+ transform: translateX(1350%) translateY(50%);
  
-  background-color: yellow;
+  background-color: rgb(233, 233, 30);
   color: black;
   font-size: 18px;
   padding: 10px 20px;
@@ -469,7 +469,7 @@ display: block;
     
 #toggle-music {
  
-  transform: translateX(600%) translateY(50%);
+  transform: translateX(850%) translateY(50%);
 
     .moving-text {
         font-size: 20px;
