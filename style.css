@@ -223,7 +223,7 @@ body {
 
 #toggle-music {
  
- transform: translateX(2%) translateY(50%);
+ transform: translateX(800%) translateY(50%);
  
   background-color: yellow;
   color: black;
@@ -466,6 +466,11 @@ display: block;
         margin-top: 1%;
     }
 
+    
+#toggle-music {
+ 
+  transform: translateX(600%) translateY(50%);
+
     .moving-text {
         font-size: 20px;
     }
@@ -573,6 +578,8 @@ display: block;
       margin-top: 1%;
   }
 
+
+ 
   .moving-text {
       font-size: 18px;
   }
