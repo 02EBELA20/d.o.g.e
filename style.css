@@ -223,7 +223,7 @@ body {
 
 #toggle-music {
  
- transform: translateX(1350%) translateY(50%);
+ transform: translateX(1350%) translateY(-150%);
  
   background-color: rgb(233, 233, 30);
   color: black;
@@ -469,7 +469,7 @@ display: block;
     
 #toggle-music {
  
-  transform: translateX(850%) translateY(50%);
+  transform: translateX(850%) translateY(-150%);
 
     .moving-text {
         font-size: 20px;
@@ -537,7 +537,7 @@ display: block;
     /* 📌 მთავარი ტექსტი */
     .main-text {
       margin-top: 5%;
-        width: 65%;
+        width: 65;
         font-size: 28px;
     }
 
