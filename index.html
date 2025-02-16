@@ -25,40 +25,23 @@
                 <a href="https://x.com/DOGE89649" target="_blank"><img src="icon/x.png" alt="Telegram"></a>
 
     </div>
-    <audio id="background-music" loop>
-        <source src="audio/DOGE-ENERGY8.mp3">
-        Your browser does not support the audio element.
-    </audio>
-    
-    <button id="toggle-music">🔊</button>
-    
-    <script>
-        const music = document.getElementById("background-music");
-        const toggleButton = document.getElementById("toggle-music");
-    
-        // 👉 ავტომატურად ვცდილობთ აუდიოს გაშვებას
-        window.addEventListener("load", function() {
-            music.play().catch(error => console.log("Autoplay blocked:", error));
-        });
-    
-        // 🎵 Play/Pause ღილაკის ფუნქცია
-        toggleButton.addEventListener("click", function() {
-            if (music.paused) {
-                music.play();
-                toggleButton.textContent = "🔊 Pause";
-            } else {
-                music.pause();
-                toggleButton.textContent = "▶️ Play";
-            }
-        });
-    </script>
     
 
+    
+    <div id="toggle-music">
+        <img src="icon/audiobook.png" alt="Toggle Music">
+    </div>
+    <audio id="bg-music">
+        <source src="audio/DOGE-ENERGY8.mp3" type="audio/mpeg">
+    </audio>
+    
+    
     <div class="moving-back">
         <span class="moving-text">
-            🔊 ELON YOU HAVE THE PLAN DOGE-ENERGY WILL BRING THE FORCE! WE’RE IN & WE’RE ALL IN TIME TO LIGHT UP THE SOLAR WORLD! ☀️🌎🚀
+            🔊 ELON YOU HAVE THE PLAN DOGE-ENERGY WILL BRING THE FORCE! WE’RE IN & WE’RE ALL IN-TIME TO LIGHT UP THE SOLAR WORLD! ☀️🌎
         </span>
     </div>
+
 
  
 
@@ -108,7 +91,7 @@
 
     </div>
     <div class="container">
-        <h2>🔑 Here’s The Plan</h2>
+        <h2>  The Plan  </h2>
         
         <div class="plan-item">
             <div class="number"></div>

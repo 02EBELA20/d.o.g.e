@@ -11,6 +11,21 @@ body {
       box-sizing: border-box
 }
 
+#toggle-music {
+  position: relative;
+  left: 48.7%;
+  width:50px; /* სასურველი ზომა */
+  height: 50px;
+  cursor: pointer;
+  margin-bottom: 1%;
+}
+
+
+#toggle-music img {
+  width: 100%;
+  height: 100%;
+}
+
 
 /* 🟢 CONTAINER FIXES */
 .container {
@@ -82,7 +97,7 @@ body {
   color: #e8ff28f0;
   text-shadow: 0px 0px 10px rgba(255, 255, 70, 0.897); /* ყვითელი ნათება */
   white-space: nowrap; /* ტექსტი არ უნდა გადატყდეს ახალ ხაზზე */
-  animation: marquee 20s linear infinite; /* ანიმაციის დამატება */
+  animation: marquee 40s linear infinite; /* ანიმაციის დამატება */
 }
 
 /* მოსიარულე ტექსტის ანიმაცია */
@@ -221,18 +236,6 @@ body {
   }
 }
 
-#toggle-music {
- 
- transform: translateX(1350%) translateY(-150%);
- 
-  background-color: rgb(233, 233, 30);
-  color: black;
-  font-size: 18px;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
 
 .main-text {
   width: 57%; /* კონტეინერის სიგანე */
@@ -466,14 +469,6 @@ display: block;
         margin-top: 1%;
     }
 
-    
-#toggle-music {
- 
-  transform: translateX(850%) translateY(-150%);
-
-    .moving-text {
-        font-size: 20px;
-    }
 
     /* 🎬 მთავარი ვიდეო */
     .featured-video iframe {
@@ -731,6 +726,9 @@ body {
       font-size: 18px;
   }
 
+  #toggle-music{
+   display: flex;
+   transform: translateX(-30%);
   /* მთავარი ვიდეო */
   .featured-video iframe {
       width: 100%;
