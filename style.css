@@ -698,82 +698,75 @@ body {
   text-align: center;
 }
 
-/* 🟡 MOBILE FIXES */
-@media screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    overflow-x: hidden;
-  /* მობილურ ვერსიაზე სურათების გაქრობა */
-  .left1,
-  .right2 {
-      display: none;
-  }
+@media screen and (max-width: 767px) {
 
-  /* კონტეინერის ზომა */
-  .container {
-      width: 95%;
-      padding: 10px;
-      max-width: 100%;
-  }
+body{margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-  /* მოძრავი ტექსტი */
-  .moving-back {
-      height: 35px;
-      font-size: 14px;
-  }
+.left1{
+  display: none;
+}
+.right2{
+  display: none;
+}
+#toggle-music{
 
-  .moving-text {
-      font-size: 18px;
-  }
+  transform: translateX(-30%);
+}
 
-  #toggle-music{
-   display: flex;
-   transform: translateX(-30%);
-  /* მთავარი ვიდეო */
-  .featured-video iframe {
-      width: 100%;
-      height: 220px;
-      box-shadow: 0 0 10px yellow;
-  }
+.scrolling-videos iframe{
+  width: 40%;
+}
 
-  /* ძირითადი ტექსტი */
-  .main-text {
-      width: 80%;
-      font-size: 22px;
-      padding: 15px;
-  }
-
-  /* ძირითადი გეგმა */
-  .container{width: 85%;
-
-  }
- 
-
-  /* სქროლვადი ვიდეოები */
-  .scrolling-videos iframe {
-      width: 40%;
-      height: 200px;
-  }
-
-  /* მონეტის ანიმაციის გასწორება */
-  .rotating-coin {
-      width: 120px;
-      height: 120px;
-      transform: translateX(70%);
-  }
-
-  /* ფუტერი */
-  .footer-section {
-      height: auto;
-      padding: 30px;
-  }
-  .meme-carousel{
-    width: 150px;
-    height: 150px;
-  }
-  .footer-content p{
+  .main-text{
     width: 80%;
-    font-size: 15px;
+    font-size: 20px;
   }
+
+.rotating-coin{
+width: 150px;
+height: 150px;
+transform: translateX(115%)
+;
 }
+
+.container{
+  width: 80%;
+  font-size: 20px;
 }
+
+.meme-carousel{
+  width: 150px;
+  height: 150px;
+
+}
+#prev-btn{
+  width: 70px;
+  height: 50px;
+  font-size: 15px;
+}
+#next-btn{
+  width: 70px;
+  height: 50px;
+  font-size: 15px;
+}
+
+
+.footer-content p{
+  font-size: 15px;
+}
+.footer-content h2{
+  font-size: 25px;
+}
+
+.footer-content{width: 80%;}
+
+
+}
+
+
+
+
+
