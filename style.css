@@ -720,6 +720,9 @@ body{margin: 0;
 .moving-back{
   margin-top: 3%;
 }
+.moving-text{
+  font-size:larger;
+}
 .left1{
   display: none;
 }
