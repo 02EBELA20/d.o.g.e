@@ -474,6 +474,11 @@ display: block;
       font-size: 18px;
   }
 
+  #toggle-music img {
+
+    transform: translateX(-20%);
+  }
+
 /* 🎬 მთავარი ვიდეო */
 .featured-video iframe {
   width: 350px; /* 🎯 შეცვალე საჭიროებისამებრ */
@@ -560,7 +565,7 @@ margin-top: 7%;
     }
   }
 
-}
+
 
 .highlight{
   margin-top: 5%;
