@@ -25,11 +25,12 @@ html, body {
 
 #toggle-music {
   position: relative;
-  left: 48.6%;
+  left: 35%;
   width:50px; /* სასურველი ზომა */
   height: 50px;
   cursor: pointer;
   margin-bottom: 1%;
+
 }
 
 
@@ -476,7 +477,7 @@ display: block;
 
   #toggle-music img {
 
-    transform: translateX(-20%);
+    transform: translateX(-100%);
   }
 
 /* 🎬 მთავარი ვიდეო */
@@ -598,6 +599,9 @@ body {
   text-align: center;
 }
 
+.social-icons{
+  margin-left: 5%;
+}
 @media screen and (max-width: 767px) {
 
 body{margin: 0;
@@ -619,7 +623,7 @@ body{margin: 0;
 }
 #toggle-music img {
 
-  transform: translateX(-35%);
+  transform: translateX(-150%);
 }
 
 .scrolling-videos iframe{
@@ -683,7 +687,9 @@ transform: translateX(90%)
   margin-right: 20%;
 }
 
-
+.social-icons{
+  margin-left: 10%;
+}
 
 
 
