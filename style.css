@@ -600,7 +600,7 @@ body {
 }
 
 .social-icons{
-  margin-left: 5%;
+  margin-left: 4%;
 }
 @media screen and (max-width: 767px) {
 
@@ -623,7 +623,9 @@ body{margin: 0;
 }
 #toggle-music img {
 
-  transform: translateX(-150%);
+  transform: translateX(-170%);
+  width: 45px;
+  height: 40px;
 }
 
 .scrolling-videos iframe{
@@ -690,7 +692,7 @@ transform: translateX(90%)
 .social-icons{
   margin-left: 10%;
 }
-
+.
 
 
 }
