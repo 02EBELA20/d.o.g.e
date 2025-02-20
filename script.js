@@ -50,12 +50,4 @@ document.getElementById("toggle-music").addEventListener("click", function () {
     }
 });
 
-document.getElementById("toggle-mobile").addEventListener("click", function () {
-    let audio = document.getElementById("bg-music");
 
-    if (audio.paused) {
-        audio.play().catch(error => console.log("Error playing audio:", error));
-    } else {
-        audio.pause();
-    }
-});
