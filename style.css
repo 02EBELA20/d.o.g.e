@@ -39,7 +39,7 @@ html, body {
   height: 100%;
 }
 
-
+#toggle-mobile img{ display: none;}
 /* 🟢 CONTAINER FIXES */
 .container {
   width: 80%; /* კომპიუტერზე სიგანე 70% */
@@ -480,6 +480,8 @@ display: block;
     transform: translateX(-100%);
   }
 
+#toggle-mobile img{ display: none;}
+
 /* 🎬 მთავარი ვიდეო */
 .featured-video iframe {
   width: 350px; /* 🎯 შეცვალე საჭიროებისამებრ */
@@ -623,11 +625,14 @@ body{margin: 0;
 }
 #toggle-music img {
 
-  transform: translateX(-170%);
-  width: 45px;
-  height: 40px;
+display: none;
 }
+#toggle-mobile img{
+display: block;
+margin-left: 45%;
+  width: 50px;
 
+}
 .scrolling-videos iframe{
   width: 40%;
 }
