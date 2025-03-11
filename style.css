@@ -51,7 +51,7 @@ html, body {
   text-align: left;
 }
 
-.plan-item {wi
+.plan-item {
   display: flex;
   align-items: flex-start;
   margin: 15px 0;
@@ -372,7 +372,7 @@ html, body {
 
 .qa-container {
   
-  width: 80%;
+  width: 60%;
   margin: auto;
   background: rgba(0, 255, 128, 0.2);
   border-radius: 10px;
@@ -403,9 +403,9 @@ html, body {
   opacity: 0;
   transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
   padding: 10px;
-  background: #95cbea;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  color: #000;
+  color: #ffffff;
 }
 
 

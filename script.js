@@ -63,41 +63,69 @@ document.getElementById("toggle-mobile").addEventListener("click", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".meme-slide");
+    const totalSlides = slides.length;
+    let currentIndex = 0;
+    const angle = 360 / totalSlides;
+    const audio = document.getElementById("bg-music");
     const questions = document.querySelectorAll(".question");
     const answers = document.querySelectorAll(".answer");
-    let currentIndex = 0;
-
-    function showAnswer(index) {
-        answers.forEach((answer, i) => {
-            if (i === index) {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                answer.style.opacity = 1;
+    const toggleMusicBtn = document.getElementById("toggle-music");
+  
+    function updateCarousel() {
+        slides.forEach((slide, index) => {
+            const rotation = angle * (index - currentIndex);
+            slide.style.transform = `rotateY(${rotation}deg) translateZ(300px)`;
+            slide.style.opacity = index === currentIndex ? "1" : "0.5";
+  
+            if (index === currentIndex) {
+                slide.classList.add("active");
             } else {
-                answer.style.maxHeight = "0";
-                answer.style.opacity = 0;
+                slide.classList.remove("active");
             }
         });
     }
-
+  
+    document.getElementById("next-btn").addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+    });
+  
+    document.getElementById("prev-btn").addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    });
+  
+    updateCarousel();
+  
+    // Auto-play background music
+    if (audio) {
+        audio.play().catch(error => console.log("Autoplay blocked:", error));
+    }
+  
+    // Toggle play/pause when clicking the audiobook icon
+    toggleMusicBtn.addEventListener("click", function () {
+        if (audio.paused) {
+            audio.play().catch(error => console.log("Error playing audio:", error));
+        } else {
+            audio.pause();
+        }
+    });
+  
+    // Q&A Toggle
     questions.forEach((question, index) => {
         question.addEventListener("click", function () {
-            if (currentIndex === index) {
-                answers[index].style.maxHeight = "0";
-                answers[index].style.opacity = 0;
-                currentIndex = -1;
-            } else {
-                showAnswer(index);
-                currentIndex = index;
-            }
+            answers.forEach((answer, i) => {
+                if (i === index) {
+                    answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + "px";
+                    answer.style.opacity = answer.style.opacity === "1" ? "0" : "1";
+                } else {
+                    answer.style.maxHeight = null;
+                    answer.style.opacity = "0";
+                }
+            });
         });
     });
-
-    // Auto-rotate carousel
-    function rotateQA() {
-        currentIndex = (currentIndex + 1) % questions.length;
-        showAnswer(currentIndex);
-    }
-
-    setInterval(rotateQA, 5000); // Change question every 5 seconds
-});
+  });
