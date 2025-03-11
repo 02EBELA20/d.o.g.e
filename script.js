@@ -60,3 +60,44 @@ document.getElementById("toggle-mobile").addEventListener("click", function () {
         audio.pause();
     }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const questions = document.querySelectorAll(".question");
+    const answers = document.querySelectorAll(".answer");
+    let currentIndex = 0;
+
+    function showAnswer(index) {
+        answers.forEach((answer, i) => {
+            if (i === index) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+                answer.style.opacity = 1;
+            } else {
+                answer.style.maxHeight = "0";
+                answer.style.opacity = 0;
+            }
+        });
+    }
+
+    questions.forEach((question, index) => {
+        question.addEventListener("click", function () {
+            if (currentIndex === index) {
+                answers[index].style.maxHeight = "0";
+                answers[index].style.opacity = 0;
+                currentIndex = -1;
+            } else {
+                showAnswer(index);
+                currentIndex = index;
+            }
+        });
+    });
+
+    // Auto-rotate carousel
+    function rotateQA() {
+        currentIndex = (currentIndex + 1) % questions.length;
+        showAnswer(currentIndex);
+    }
+
+    setInterval(rotateQA, 5000); // Change question every 5 seconds
+});
