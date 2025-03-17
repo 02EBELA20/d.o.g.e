@@ -75,3 +75,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // ვცდილობთ ავტომატურად ჩავრთოთ მუსიკა
     tryAutoplay();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".question").forEach(question => {
+        question.addEventListener("click", () => {
+            let answer = question.nextElementSibling; // პასუხის პოვნა
+            if (answer) {
+                answer.classList.toggle("hidden"); // პასუხის ჩვენება/დამალვა
+                answer.style.display = answer.classList.contains("hidden") ? "none" : "block";
+            }
+        });
+    });
+});
